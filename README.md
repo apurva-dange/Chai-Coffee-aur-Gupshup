@@ -6,18 +6,12 @@ A personal scheduling experience built for effortless coffee-chat bookings—wit
 
 ## Project Demo
 
-### Version 1
-
-![Chai, Coffee aur Gupshup booking demo](assets/ccg-demo.gif)
-
-### Version 2
-
 ![Chai, Coffee aur Gupshup alternate booking demo](assets/ccg-downloads-demo.gif)
 
 ## Highlights
 
 - Live availability synced with Google Calendar
-- 15- and 45-minute meeting options
+- 15-minute and 45-minute meeting options
 - Automatic Google Meet links and calendar invitations
 - Double-booking protection with configurable buffers and notice periods
 - Responsive, focused booking flow hosted on GitHub Pages
