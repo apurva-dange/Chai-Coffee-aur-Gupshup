@@ -45,6 +45,7 @@ npm run dev
 
 - Phoenix time (MST / UTC−7 year-round)
 - Monday–Friday, 8:00 AM–7:00 PM
+- Saturday–Sunday, 10:00 AM–4:00 PM
 - 24-hour minimum notice
 - Availability through the end of the second following month
 - 15-minute buffer around busy events
