@@ -17,7 +17,7 @@ GitHub Pages is static, so the companion Apps Script handles private Calendar op
 3. Replace the editor's code with `apps-script/Code.gs`.
 4. In **Project Settings**, enable **Show appsscript.json manifest file in editor**, then replace the manifest with `apps-script/appsscript.json`.
 5. In **Services**, confirm that **Google Calendar API v3** is enabled.
-6. Select `authorizeCalendar` from the function menu, click **Run**, and approve the requested Calendar permissions. It only performs a one-minute free/busy check.
+6. Select `authorizeCalendar` from the function menu, click **Run**, and approve the two narrowly scoped Calendar permissions: manage events and view free/busy availability. The app does not request permission to delete calendars or change calendar sharing.
 7. Select **Deploy → New deployment → Web app**.
 8. Choose **Execute as: Me** and **Who has access: Anyone**, then deploy.
 9. Copy the deployment URL ending in `/exec`.
