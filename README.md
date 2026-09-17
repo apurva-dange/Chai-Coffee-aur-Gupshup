@@ -17,9 +17,10 @@ GitHub Pages is static, so the companion Apps Script handles private Calendar op
 3. Replace the editor's code with `apps-script/Code.gs`.
 4. In **Project Settings**, enable **Show appsscript.json manifest file in editor**, then replace the manifest with `apps-script/appsscript.json`.
 5. In **Services**, confirm that **Google Calendar API v3** is enabled.
-6. Select **Deploy → New deployment → Web app**.
-7. Choose **Execute as: Me** and **Who has access: Anyone**, authorize Calendar access, and deploy.
-8. Copy the deployment URL ending in `/exec`.
+6. Select `authorizeCalendar` from the function menu, click **Run**, and approve the requested Calendar permissions. It only performs a one-minute free/busy check.
+7. Select **Deploy → New deployment → Web app**.
+8. Choose **Execute as: Me** and **Who has access: Anyone**, then deploy.
+9. Copy the deployment URL ending in `/exec`.
 
 If the ASU Google Workspace account blocks public web apps, create the script from a personal Google account and share the `adange@asu.edu` calendar with that account with permission to make changes to events.
 
