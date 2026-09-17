@@ -6,7 +6,13 @@ A personal scheduling experience built for effortless coffee-chat bookings—wit
 
 ## Demo
 
+### Version 1
+
 ![Chai, Coffee aur Gupshup booking demo](assets/ccg-demo.gif)
+
+### Version 2
+
+![Chai, Coffee aur Gupshup alternate booking demo](assets/ccg-downloads-demo.gif)
 
 ## Highlights
 
