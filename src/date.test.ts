@@ -1,0 +1,2 @@
+import{describe,expect,it}from"vitest";import{formatDateLong,formatTime12,phoenixTodayParts}from"./date";
+describe("date helpers",()=>{it("formats booking dates",()=>{expect(formatDateLong("2026-09-17")).toBe("Thursday, September 17, 2026");expect(formatTime12("13:30")).toBe("1:30 PM")});it("uses UTC-7",()=>expect(phoenixTodayParts(Date.parse("2026-09-17T05:00:00Z"))).toEqual({year:2026,month:8,day:16}))});
