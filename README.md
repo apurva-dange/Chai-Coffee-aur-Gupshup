@@ -4,7 +4,7 @@ A personal scheduling experience built for effortless coffee-chat bookings—wit
 
 **[Book a coffee chat →](https://apurva-dange.github.io/Chai-Coffee-aur-Gupshup/)**
 
-## Demo
+## Project Demo
 
 ### Version 1
 
