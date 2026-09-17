@@ -6,9 +6,7 @@ A personal scheduling experience built for effortless coffee-chat bookings—wit
 
 ## Demo
 
-[![Watch the Chai, Coffee aur Gupshup booking demo](assets/ccg-demo-preview.jpg)](assets/ccg-demo.mp4)
-
-*Click the preview to watch the complete booking flow.*
+![Chai, Coffee aur Gupshup booking demo](assets/ccg-demo.gif)
 
 ## Highlights
 
