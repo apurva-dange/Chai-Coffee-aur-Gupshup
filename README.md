@@ -1,39 +1,32 @@
 # Chai, Coffee aur Gupshup
 
-Apurva Dange's standalone personal scheduling page. It mirrors the portfolio's **Let's Talk** experience, checks live Google Calendar availability, creates a Google Meet event, and emails the invitation to the guest.
+A personal scheduling experience built for effortless coffee-chat bookings—without relying on a third-party scheduling platform.
 
-## Hosting
+**[Book a coffee chat →](https://apurva-dange.github.io/Chai-Coffee-aur-Gupshup/)**
 
-- Website: GitHub Pages
-- Private calendar service: Google Apps Script, running under Apurva's Google account
-- Google credentials: never stored in this repository or sent to the browser
+## Demo
 
-GitHub Pages is static, so the companion Apps Script handles private Calendar operations.
+[![Watch the Chai, Coffee aur Gupshup booking demo](assets/ccg-demo-preview.jpg)](assets/ccg-demo.mp4)
 
-## One-time Google Apps Script setup
+*Click the preview to watch the complete booking flow.*
 
-1. Visit [script.google.com](https://script.google.com) while signed into the Google account that owns or can edit `adange@asu.edu`.
-2. Create a project named `Chai Coffee aur Gupshup`.
-3. Replace the editor's code with `apps-script/Code.gs`.
-4. In **Project Settings**, enable **Show appsscript.json manifest file in editor**, then replace the manifest with `apps-script/appsscript.json`.
-5. In **Services**, confirm that **Google Calendar API v3** is enabled.
-6. Select `authorizeCalendar` from the function menu, click **Run**, and approve the two narrowly scoped Calendar permissions: manage events and view free/busy availability. The app does not request permission to delete calendars or change calendar sharing.
-7. Select **Deploy → New deployment → Web app**.
-8. Choose **Execute as: Me** and **Who has access: Anyone**, then deploy.
-9. Copy the deployment URL ending in `/exec`.
+## Highlights
 
-If the ASU Google Workspace account blocks public web apps, create the script from a personal Google account and share the `adange@asu.edu` calendar with that account with permission to make changes to events.
+- Live availability synced with Google Calendar
+- 15- and 45-minute meeting options
+- Automatic Google Meet links and calendar invitations
+- Double-booking protection with configurable buffers and notice periods
+- Responsive, focused booking flow hosted on GitHub Pages
 
-## GitHub Pages setup
+## How it works
 
-1. Open **Settings → Secrets and variables → Actions → Variables** in this repository.
-2. Add `BOOKING_API_URL` with the Apps Script `/exec` URL as its value.
-3. Open **Settings → Pages** and set **Source** to **GitHub Actions**.
-4. Run the **Deploy to GitHub Pages** workflow or push to `main`.
+The React frontend collects the meeting details and displays available time slots. A Google Apps Script service securely checks calendar availability, creates the event, adds a Google Meet link, and sends the invitation—without exposing Google credentials to the browser.
 
-Public URL: `https://apurva-dange.github.io/Chai-Coffee-aur-Gupshup/`
+## Built with
 
-## Local development
+React · TypeScript · Vite · Google Apps Script · Google Calendar API · GitHub Pages
+
+## Run locally
 
 ```bash
 cp .env.example .env.local
@@ -41,14 +34,6 @@ npm install
 npm run dev
 ```
 
-## Booking rules
+## Availability
 
-- Phoenix time (MST / UTC−7 year-round)
-- Monday–Friday, 8:00 AM–7:00 PM
-- Saturday–Sunday, 10:00 AM–4:00 PM
-- 24-hour minimum notice
-- Availability through the end of the second following month
-- 15-minute buffer around busy events
-- 15-minute intro chats and 45-minute deep dives
-
-The invitation wording is in `apps-script/Code.gs` inside `create_` and can be revised independently of the website.
+Times are shown in Phoenix time (MST): weekdays from 8 AM–7 PM and weekends from 10 AM–4 PM, with a 24-hour minimum notice.
